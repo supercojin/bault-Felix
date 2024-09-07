@@ -36,7 +36,7 @@
             key-positions = <11 12>;
         };
 
-        Layer3 {
+        Layer2 {
             bindings = <&lt 2 SPACE>;
             key-positions = <34 35>;
         };
