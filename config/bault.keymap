@@ -42,10 +42,10 @@
 
         base {
             bindings = <
-&kp Q   &kp W             &kp E         &kp R        &kp T  &kp Y      &kp U  &kp I          &kp O              &kp P            &kp BACKSPACE
-&kp A   &kp S             &kp D         &kp F        &kp G  &kp H      &kp J  &kp K          &kp L              &kp ENTER
-&kp Z   &kp X             &kp C         &kp V        &kp B  &kp N      &kp M  &kp COMMA      &kp PERIOD         &kp RIGHT_SHIFT
-&kp N0  &kp LEFT_CONTROL  &kp LEFT_ALT  &lt 1 SPACE         &kp SPACE         &kp RIGHT_ALT  &kp RIGHT_CONTROL  &kp N0
+&kp Q  &kp W  &kp E             &kp R        &kp T  &kp Y      &kp U  &kp I          &kp O          &kp P            &kp BACKSPACE
+&kp A  &kp S  &kp D             &kp F        &kp G  &kp H      &kp J  &kp K          &kp L          &kp ENTER
+&kp Z  &kp X  &kp C             &kp V        &kp B  &kp N      &kp M  &kp COMMA      &kp PERIOD     &kp RIGHT_SHIFT
+&none  &none  &kp LEFT_CONTROL  &lt 1 SPACE         &kp SPACE         &kp RIGHT_ALT  &kp RIGHT_ALT  &none
             >;
         };
 
@@ -54,7 +54,7 @@
 &kp N1          &kp N2            &kp N3             &kp N4                &kp N5  &kp N6  &kp N7     &kp N8          &kp N9           &kp N0        &kp GRAVE
 &kp CAPS        &kp MINUS         &kp EQUAL          &trans                &trans  &trans  &trans     &kp SEMICOLON   &kp SQT          &mo 2
 &kp LEFT_SHIFT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp NON_US_BACKSLASH  &trans  &trans  &kp SLASH  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp UP_ARROW
-&kp N0          &trans            &trans             &trans                        &trans             &trans          &kp DOWN_ARROW   &kp N0
+&kp N0          &trans            &trans             &trans                        &trans             &kp DOWN_ARROW  &kp DOWN_ARROW   &kp N0
             >;
         };
 
@@ -64,6 +64,24 @@
 &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans        &trans        &trans
 &trans  &trans  &trans  &trans  &trans  &bt BT_CLR    &out OUT_BLE  &out OUT_USB  &out OUT_TOG  &trans
 &kp N0  &trans  &trans  &trans          &trans                      &trans        &trans        &kp N0
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans          &trans          &trans  &trans  &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans          &trans          &trans  &trans  &trans
             >;
         };
     };
