@@ -21,11 +21,6 @@
     combos {
         compatible = "zmk,combos";
 
-        Esc {
-            bindings = <&kp ESC>;
-            key-positions = <0 1>;
-        };
-
         Layer2 {
             bindings = <&lt 2 SPACE>;
             key-positions = <34 35>;
@@ -34,6 +29,11 @@
         Backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <9 10>;
+        };
+
+        Enter {
+            bindings = <&kp ENTER>;
+            key-positions = <20 19>;
         };
     };
 
